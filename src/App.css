@@ -1,38 +1,93 @@
-.App {
+body {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+}
+
+header, footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #495E57;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #495E57;
+  color: white;
+  flex-direction: column;
   text-align: center;
+  gap: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact-info p {
+  margin: 2px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.booking-form {
+  display: grid;
+  gap: 15px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.booking-form label {
+  font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form button {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.booking-form button {
+  background-color: #495E57;
+  color: white;
+  cursor: pointer;
+}
+
+.booking-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.specials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.customers-say {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  margin: 30px 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.confirmed-booking {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
 }
